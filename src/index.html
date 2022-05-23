@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <title>Proyecto Juego</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="assets/images/logotipo.png" />
+      <div class="menu">
+        <a class="a-menu" href="#Personajes">Personajes</a>
+        <a class="a-menu" href="#Mapas">Mapas</a>
+      </div>
+    </header>
+    <section class="section-video">
+      <video
+        autoplay
+        muted
+        loop
+        class="video">
+        <source src="assets/images/video.mp4" type="video/mp4"/>
+        <source src="assets/images/video.avi" type="video/avi"/>
+        <source src="assets/images/video.webm" type="video/webm"/>
+    </video>
+    <div class="marca">
+      EL BOSQUE DE LAS MENTIRAS
+  </div>
+    </section>
+
+    <section class="section-personajes">
+      <a name="Personajes"></a>
+      <h1>Personajes</h1>
+      <div class="personaje1">
+        <img class="foto-personaje1" src="assets/images/personaje1.svg" />
+        <p class="texto-personaje1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          commodi culpa, facere aspernatur, molestiae quaerat deleniti fugit
+          inventore nemo alias nam dignissimos in sit asperiores laudantium
+          totam ducimus nisi error!
+        </p>
+      </div>
+  
+      <div class="personaje1">
+        <p class="texto-personaje1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          commodi culpa, facere aspernatur, molestiae quaerat deleniti fugit
+          inventore nemo alias nam dignissimos in sit asperiores laudantium
+          totam ducimus nisi error!
+        </p>
+        <img class="foto-personaje2" src="assets/images/personaje2.svg" />
+    </section>
+
+
+    <section class="section-mapas">
+      <a name="Mapas"></a>
+      <h1>Mapas</h1>
+
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slide-1" 
+                name="slide" aria-hidden="true" hidden="" checked="checked">
+          <div class="slide-item">
+            <img srcset="assets/images/Mapa1C.png 400w,
+            assets/images/Mapa1.png 800w" 
+            sizes="(max-width: 400px) 380px, 800px"
+            src="assets/images/Mapa1.png">
+          </div>
+          <input class="slide-open" type="radio" id="slide-2" 
+                name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img srcset="assets/images/Mapa2.png 400w,
+            assets/images/Mapa2C.png 800w" 
+            sizes="(max-width:400px) 380px, 800px"
+            src="assets/images/Mapa2.png" >
+            
+           
+          </div>
+          <input class="slide-open" type="radio" id="slide-3" 
+                name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="assets/images/Mapa3.png" srcset="assets/images/Mapa3.png 400w,
+            assets/images/Mapa3C.png 800w"
+            sizes="(max-width:400px) 500px">
+          </div>
+          <label for="slide-3" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-1" class="slide-control next control-3">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-audio">
+      <audio autoplay loop controls>
+        <source src="./assets/images/Spring-Village.mp3" type="audio/mp3" />
+        <source src="./assets/images/Spring Village.ogg" type="audio/ogg" />
+        <source src="./assets/images/Spring-Village.flac" type="audio/flac"/>
+        Tu navegador no soporta audio HTML5.
+      </audio>
+    </section>
+  </body>
+</html>
